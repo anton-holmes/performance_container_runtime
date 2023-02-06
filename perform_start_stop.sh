@@ -1,4 +1,6 @@
+
 #!/bin/bash
+test
 # docker pull nginx
 docker run -itd --name nginx_perform nginx sh -c "service nginx stop"
 START=$(docker inspect --format='{{.State.StartedAt}}' nginx_perform)
